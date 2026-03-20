@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <NoWarn>$(NoWarn);NU5128;NU5110;NU5111</NoWarn>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <NeutralLanguage>en</NeutralLanguage>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageType>Template</PackageType>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <PackageId>RevitCloudKit</PackageId>
+        <Authors>Nikita Snizhko</Authors>
+        <Description>Cloud Templates for Revit Plugins development</Description>
+        <PackageTags>revit;templates;addin;cloud</PackageTags>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/NikitaSnizhko/RevitCloudKit</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/NikitaSnizhko/RevitCloudKit</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Remove="**\*" />
+        <Content Include="**\*" Exclude="**\bin\**\*;**\obj\**\*;*.csproj"/>
+    </ItemGroup>
+
+</Project>

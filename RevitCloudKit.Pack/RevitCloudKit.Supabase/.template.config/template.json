@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Nikita Snizhko",
+  "identity": "RevitCloudKit.Supabase",
+  "name": "RevitCloudKit Supabase",
+  "shortName": "revit-supabase",
+  "description": "Revit Addin with Supabase cloud backend. Includes authentication, PostgREST database, and file storage.",
+  "sourceName": "RevitCloudKit",
+  "defaultName": "SupabaseAddin",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project",
+    "platform": ".NET"
+  },
+  "classifications": [
+    "Revit",
+    "Addin",
+    "Supabase",
+    "Cloud",
+    "BIM"
+  ],
+  "guids": [
+    "D9B94751-6F30-4505-8268-FF525BF40639"
+  ],
+  "sources": [
+    {
+      "exclude": [
+        "bin/**",
+        "obj/**",
+        ".vs/**",
+        "**/*.user",
+        "**/*.suo",
+        ".idea/**",
+        ".claude/**",
+        ".template.config/**"
+      ]
+    }
+  ],
+  "specialCustomOperations": {
+    "**/*.cs": {
+      "operations": [
+        {
+          "type": "conditional",
+          "configuration": {
+            "if": [ "//#if" ],
+            "else": [ "//#else" ],
+            "elseif": [ "//#elseif" ],
+            "endif": [ "//#endif" ],
+            "trim": true,
+            "wholeLine": true,
+            "evaluator": "C++"
+          }
+        }
+      ]
+    }
+  }
+}

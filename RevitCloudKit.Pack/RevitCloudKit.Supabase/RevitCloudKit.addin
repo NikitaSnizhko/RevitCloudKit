@@ -1,0 +1,10 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>RevitCloudKit</Name>
+        <Assembly>RevitCloudKit\RevitCloudKit.dll</Assembly>
+        <AddInId>D9B94751-6F30-4505-8268-FF525BF40639</AddInId>
+        <FullClassName>RevitCloudKit.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+    </AddIn>
+</RevitAddIns>

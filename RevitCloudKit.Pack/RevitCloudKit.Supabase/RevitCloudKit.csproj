@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <UseWPF>true</UseWPF>
+        <EnableDynamicLoading>true</EnableDynamicLoading>
+        <Configurations>Debug.R25;Debug.R26;Release.R25;Release.R26</Configurations>
+        <Platforms>x64</Platforms>
+
+        <RevitVersion Condition="$(Configuration.Contains('R25'))">2025</RevitVersion>
+        <RevitVersion Condition="$(Configuration.Contains('R26'))">2026</RevitVersion>
+        <RevitVersion Condition="'$(RevitVersion)' == ''">2026</RevitVersion>
+
+        <TargetFramework>net8.0-windows</TargetFramework>
+
+        <PlatformTarget>x64</PlatformTarget>
+
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <OutputPath>bin\$(Configuration)\</OutputPath>
+
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>default</LangVersion>
+
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="$(Configuration.Contains('Release'))">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+        <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitVersion).*"/>
+        <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*"/>
+
+        <PackageReference Include="JetBrains.Annotations" Version="2024.3.0"/>
+
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0"/>
+
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+        <PackageReference Include="Revit.Async" Version="2.1.1" />
+        <PackageReference Include="Supabase" Version="1.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Resource Include="Resources\Icons\RibbonIcon16.png"/>
+        <Resource Include="Resources\Icons\RibbonIcon32.png"/>
+    </ItemGroup>
+
+</Project>
