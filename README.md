@@ -2,9 +2,9 @@
 ![Revit](https://img.shields.io/badge/Autodesk_Revit-%23186BFF.svg?style=for-the-badge&logo=autodeskrevit&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![License](https://img.shields.io/github/license/YOU/REPO?style=for-the-badge)
 
 
-### About
 RevitCloudKit is a .NET template for building Revit Add-ins with cloud connectivity. 
 It provides a modern, modular architecture with built-in support for Supabase authentication, 
 async Revit API calls, and cloud data storage.
@@ -28,7 +28,7 @@ dotnet new install RevitCloudKit
    ```shell
       dotnet new revit-supabase -n [NewAddinName]
     ```
-- IDE: In IDE(Rider, Visual Studio) create a new project from the "RevitCloudKit" template.
+- IDE: In IDE(Rider, Visual Studio, etc) create a new project from the "RevitCloudKit" template.
 
 
 ### Configuration

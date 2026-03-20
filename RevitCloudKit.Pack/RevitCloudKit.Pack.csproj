@@ -7,6 +7,15 @@
         <Nullable>enable</Nullable>
         <NeutralLanguage>en</NeutralLanguage>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageIcon>.nuget\RCK128.png</PackageIcon>
+        
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="$(Configuration.Contains('Release'))">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -15,16 +24,20 @@
         <IncludeBuildOutput>false</IncludeBuildOutput>
         <PackageId>RevitCloudKit</PackageId>
         <Authors>Nikita Snizhko</Authors>
-        <Description>Cloud Templates for Revit Plugins development</Description>
+        <Description>Cloud Templates for Revit Plugins development.</Description>
         <PackageTags>revit;templates;addin;cloud</PackageTags>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/NikitaSnizhko/RevitCloudKit</RepositoryUrl>
         <PackageProjectUrl>https://github.com/NikitaSnizhko/RevitCloudKit</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
         <Compile Remove="**\*" />
-        <Content Include="**\*" Exclude="**\bin\**\*;**\obj\**\*;*.csproj"/>
+        <Content Include="**\*" Exclude="**\bin\**\*;**\obj\**\*;*.csproj;.nuget\**\*"/>
+        <None Include=".nuget\RCK128.png" Pack="true" PackagePath=".nuget\" />
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>

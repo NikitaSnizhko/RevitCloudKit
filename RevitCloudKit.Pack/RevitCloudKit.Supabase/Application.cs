@@ -27,8 +27,8 @@ public class Application : IExternalApplication
                 Assembly.GetExecutingAssembly().Location,
                 typeof(StartupCommand).FullName)
             {
-                LargeImage = new BitmapImage(new Uri("pack://application:,,,/RevitCloudKit;component/Resources/Icons/RibbonIcon32.png")),
-                Image = new BitmapImage(new Uri("pack://application:,,,/RevitCloudKit;component/Resources/Icons/RibbonIcon16.png")),
+                LargeImage = new BitmapImage(new Uri("pack://application:,,,/RevitCloudKit;component/Resources/Icons/RCK32.png")),
+                Image = new BitmapImage(new Uri("pack://application:,,,/RevitCloudKit;component/Resources/Icons/RCK16.png")),
                 LongDescription = "Main command for RevitCloudKit.",
                 ToolTip = "Main command for RevitCloudKit."
             };
@@ -39,8 +39,8 @@ public class Application : IExternalApplication
                 Assembly.GetExecutingAssembly().Location,
                 typeof(LoginCommand).FullName)
             {
-                LargeImage = new BitmapImage(new Uri("pack://application:,,,/RevitCloudKit;component/Resources/Icons/RibbonIcon32.png")),
-                Image = new BitmapImage(new Uri("pack://application:,,,/RevitCloudKit;component/Resources/Icons/RibbonIcon16.png")),
+                LargeImage = new BitmapImage(new Uri("pack://application:,,,/RevitCloudKit;component/Resources/Icons/RCK32.png")),
+                Image = new BitmapImage(new Uri("pack://application:,,,/RevitCloudKit;component/Resources/Icons/RCK16.png")),
                 LongDescription = "Login to RevitCloudKit.",
                 ToolTip = "Login to RevitCloudKit."
             };

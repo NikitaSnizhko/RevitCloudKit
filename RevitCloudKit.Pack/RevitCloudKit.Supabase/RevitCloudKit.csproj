@@ -33,22 +33,23 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
         <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitVersion).*"/>
         <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*"/>
+        
+        <PackageReference Include="Revit.Async" Version="2.1.1" />
 
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
         <PackageReference Include="JetBrains.Annotations" Version="2024.3.0"/>
 
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0"/>
 
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
-        <PackageReference Include="Revit.Async" Version="2.1.1" />
         <PackageReference Include="Supabase" Version="1.1.1" />
     </ItemGroup>
 
     <ItemGroup>
-        <Resource Include="Resources\Icons\RibbonIcon16.png"/>
-        <Resource Include="Resources\Icons\RibbonIcon32.png"/>
+        <Resource Include="Resources\Icons\RCK16.png"/>
+        <Resource Include="Resources\Icons\RCK32.png"/>
     </ItemGroup>
 
 </Project>
