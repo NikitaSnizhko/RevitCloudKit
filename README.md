@@ -3,6 +3,8 @@
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
 ![License](https://img.shields.io/github/license/NikitaSnizhko/RevitCloudKit?style=for-the-badge)
+[![GitHub](https://img.shields.io/badge/GitHub-Open_Source-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NikitaSnizhko/RevitCloudKit)
+[![NuGet](https://img.shields.io/badge/NuGet-available-004880?style=for-the-badge&logo=nuget&logoColor=white)](https://www.nuget.org/profiles/NikitaSnizhko)
 
 
 RevitCloudKit is a .NET template for building Revit Add-ins with cloud connectivity. 
@@ -19,6 +21,8 @@ async Revit API calls, and cloud data storage.
 - Cloud Storage integration example
 
 ### Installation
+This template is available as an official NuGet package on [NuGet Gallery](https://www.nuget.org/profiles/NikitaSnizhko).
+
 ```shell
 dotnet new install RevitCloudKit
 ```
