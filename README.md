@@ -2,7 +2,7 @@
 ![Revit](https://img.shields.io/badge/Autodesk_Revit-%23186BFF.svg?style=for-the-badge&logo=autodeskrevit&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
-![License](https://img.shields.io/github/license/YOU/REPO?style=for-the-badge)
+![License](https://img.shields.io/github/license/NikitaSnizhko/RevitCloudKit?style=for-the-badge)
 
 
 RevitCloudKit is a .NET template for building Revit Add-ins with cloud connectivity. 
@@ -32,4 +32,4 @@ dotnet new install RevitCloudKit
 
 
 ### Configuration
-To start exploring the template follow this Guide:....
+To start exploring the template follow this [Guide](https://github.com/NikitaSnizhko/RevitCloudKit/wiki).
